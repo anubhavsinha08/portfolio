@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PortFollio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="left-nav">
+        <h1 id="nameTitle">ANUBHAV SINHA</h1>
+      </div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="right-nav" id="navMenu">
+        <ul>
+          <li><a href="#home" class="nav-link">HOME</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#project" class="nav-link">Projects</a></li>
+          <!-- <li><a href="#blogs" class="nav-link">Blogs</a></li> -->
+          <!-- <li><a href="#experiences" class="nav-link">experiences</a></li> -->
+          <li onclick="showForm()">Contact</li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="intro" id="home">
+        <div class="right-intro">
+          <h1 class="animate-text delay1">HELLO</h1>
+          <h2 class="animate-text delay2">I'M ANUBHAV</h2>
+          <h1 class="animate-text delay3">MERN-STACK DEV.</h1>
+          <button onclick="showForm()" class="first">Contact me.</button>
+          <button class="first" ><a href="final RESEUME.pdf" target="_blank" class="first" style="text-decoration: none; border: none;">
+  Resume
+</a></button>
+        </div>
+        <div class="left-intro">
+          <div class="shape"><img src="pic.png" alt="" id="model" /></div>
+          <div class="overlay" id="contactOverlay">
+            <div class="contact-form">
+              <h1 style="margin-bottom: 2rem; color: white">CONTACT ME</h1>
+              <form id="contactForm">
+  <input type="text" placeholder="Your Name" required name="username" /><br />
+  <input type="email" placeholder="Your Email" required name="usermail" /><br />
+  <textarea placeholder="Your Message" required name="message"></textarea><br />
+  <button type="submit">Send</button>
+  <button type="button" onclick="hideForm()">Close</button>
+</form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about" id="about">
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JAVASCRIPT</li>
+          <li>NODE JS</li>
+          <li>EXPRESS</li>
+          <li>GIT</li>
+          <li>GIT HUB</li>
+          <li>REACT</li>
+        </ul>
+        <div class="about-title">
+          <h1>ABOUT ME</h1>
+          <p>
+            I’m a passionate MERN Stack Developer with a strong command of
+            modern technologies and a creative approach to building scalable web
+            apps.
+          </p>
+        </div>
+        <div class="about-timeline">
+          <div class="timeline-item left">
+            <div class="timeline-content">
+              <h2>HTML & CSS</h2>
+              <p>
+                Strong understanding of responsive design and UI structuring.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item right">
+            <div class="timeline-content">
+              <h2>JavaScript</h2>
+              <p>Dynamic scripting, DOM manipulation, and animations.</p>
+            </div>
+          </div>
+          <div class="timeline-item left">
+            <div class="timeline-content">
+              <h2>React</h2>
+              <p>
+                Reusable components, state management, hooks, and SPA routing.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item right">
+            <div class="timeline-content">
+              <h2>Node.js & Express</h2>
+              <p>
+                Backend REST APIs, authentication, middleware, and performance
+                optimization.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item left">
+            <div class="timeline-content">
+              <h2>Git & GitHub</h2>
+              <p>Version control, collaboration workflows, and CI/CD basics.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="project" id="project">
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JAVASCRIPT</li>
+          <li>NODE JS</li>
+          <li>EXPRESS</li>
+          <li>GIT</li>
+          <li>GIT HUB</li>
+          <li>REACT</li>
+        </ul>
+        <div class="proj-content">
+          <h1>PROJECTS</h1>
+          <br />
+          <div class="project-cards">
+            <div class="project-card">
+              <h3>Hotel Booking Website</h3>
+              <p>
+                A responsive hotel booking website to shocase my backend skills
+              </p>
+              <div class="tech-used">HTML | CSS | JavaScript| MongoBb | Node</div>
+              <div class="proj-links">
+                <a href="https://github.com/anubhavsinha08/Hotel-Booking-Plateform" target="_blank">Code</a>
+                
+              </div>
+            </div>
+            <div class="project-card">
+              <h3>Weather App</h3>
+              <p>
+                Fetches real-time weather data using OpenWeather API and
+                displays it neatly.
+              </p>
+              <div class="tech-used">HTML | CSS | JS | API</div>
+              <div class="proj-links">
+                <a href="weather-by-anubhav.netlify.app" target="_blank">Live</a>
+                <a
+                  href="https://github.com/anubhavsinha08/weather-app"
+                  target="_blank"
+                  >Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-card">
+              <h3>Breast Cancer CNN Model</h3>
+              <p>
+                breast cancer project based on dual-path CNN model analyzes both mammogram and ultrasound images with precision.
+              </p>
+              <div class="tech-used">HTML | CSS | JS | Node | MySQL| Fastapi
+              </div>
+              <div class="proj-links">
+                <!-- <a href="https://your-live-link.com" target="_blank">Live</a> -->
+                <a
+                  href="https://github.com/anubhavsinha08/breastCancer"
+                  target="_blank"
+                  >Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-card">
+              <h3>TIC-TAC Game</h3>
+              <p>
+                Tic Tac Toe game to practice javascript
+              </p>
+              <div class="tech-used">HTML | CSS | JS 
+              </div>
+              <div class="proj-links">
+                <a href="tic-tak-toe-byanubhav.netlify.app" target="_blank">Live</a>
+                
+              </div>
+            </div>
+
+             <div class="project-card">
+              <h3>Chat Application using node js</h3>
+              <p>
+                Tic Tac Toe game to practice javascript
+              </p>
+              <div class="tech-used">HTML | CSS | JS | Node | Crud |  
+              </div>
+              <div class="proj-links">
+                <a href="https://github.com/anubhavsinha08/Chat_app" target="_blank">Code</a>
+                
+              </div>
+            </div>
+
+            <div class="project-card">
+              <h3>TODO LIST</h3>
+              <p>
+                breast cancer project based on dual-path CNN model analyzes both mammogram and ultrasound images with precision.
+              </p>
+              <div class="tech-used">HTML | CSS | JS | Node | MySQL| Fastapi
+              </div>
+              <div class="proj-links">
+                <a href="todo-byanubhav.netlify.app" target="_blank">Live</a>
+                
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function () {
+    emailjs.init("_hN_m0AZ6Pp2ZqDCx"); // Replace with your EmailJS public key
+  })();
+</script>
+
+    <script src="app.js"></script>
+  </body>
+</html>
